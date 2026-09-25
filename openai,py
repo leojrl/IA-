@@ -1,0 +1,13 @@
+# Autor: maria
+# Projeto: Uso da API
+from openai import OpenAI
+
+client_api = OpenAI(
+    api_key="chave"
+)
+
+response = client.responses.create(
+    model="gpt-5.4-mini",
+    input="manga"
+)
+print(response.output_text)
